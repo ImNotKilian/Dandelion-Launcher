@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/titlebar.css">
+</head>
+<body>
+    <div class="bar drag title-bar">
+        <img src="../assets/img/logo.png" class="icon">
+        <span class="title">Dandelion</span>
+        <div class="cmd-btns">
+            <div class="no-drag pointer cmd-btn" id="btn-refresh"> <i class="material-icons tiny" title="Minimize">cached</i> </div>
+            <div class="no-drag pointer cmd-btn" id="btn-minimize"> <i class="material-icons tiny" title="Minimize">remove</i> </div>
+            <div class="no-drag pointer cmd-btn" id="btn-maximize">
+                <i id="icon_maximize" class="material-icons tiny" title="Maximize">crop_square</i>
+                <i id="icon_restore" class="material-icons tiny hide" title="Restaure">filter_none</i>
+            </div>
+            <div class="no-drag pointer cmd-btn hover-red" id="btn-close"> <i class="material-icons tiny" title="Close">close</i> </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/titlebar.js"></script>
+</body>
+</html>
